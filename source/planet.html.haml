@@ -1,0 +1,51 @@
+:ruby
+  require 'sanitize'
+  require 'open-uri/cached'
+
+  # Maxinum number of recent posts
+  max_recent = 50
+
+  # Posts *must* contain this case-insensitive keyword
+  filter_keyword = ""
+
+  all_feed_entries = []
+
+  if data[:feeds] # ensure data/feeds.yml exists
+
+    data.feeds.each do |feed_url|
+      feed = Feedjira::Feed.parse(open(feed_url).read)
+      entries = feed.entries
+
+      all_feed_entries += entries.each do |item|
+        # Add feed's title & url to each item
+        item[:feed_title] = feed.title
+        item[:feed_url] = feed.url
+      end
+    end
+
+  end
+
+  sorted_feeds = all_feed_entries.sort_by {|e| e.published}.uniq {|e| e.url}.reverse
+
+
+%section.planet.feed.syndicated.articles
+  - sorted_feeds.take(max_recent).each do |entry|
+
+    - body = entry.content || entry.summary
+
+    - next unless body[/#{filter_keyword}/i]
+
+    %article.post.hentry
+      %header.post-header
+        %h2.post-title.entry-title{id: entry.title.parameterize}= link_to entry.title, entry.url, {rel: 'nofollow'}
+
+        %header.post-meta
+        %span.byline
+          From
+          %span.author.vcard=link_to "#{entry[:feed_title]}", entry[:feed_url], {rel: 'nofollow'}
+
+        &mdash;
+
+        %time.published{datetime:entry.published.iso8601}= entry.published.strftime('%Y-%m-%d')
+
+      %section.post-content.entry-content= Sanitize.clean(body, Sanitize::Config::RELAXED)
