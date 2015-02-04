@@ -37,9 +37,9 @@ page_classes: planet
               %span.avatar{class: "#{'rounded' if entry[:image_rounded] != false}"}= image_tag("planet/#{entry[:feed_image]}")
             %span.byline
               %span.hidden From
-              %span.author.vcard= entry[:feed_title]
+              %span.author.vcard= entry[:feed_name]
 
-      %section.post-content.entry-content= Sanitize.clean(body, Sanitize::Config::RELAXED)
+      %section.post-content.entry-content= Sanitize.clean(demote_headings(body), Sanitize::Config::RELAXED)
 
       %footer.post-meta-footer
         %span.byline

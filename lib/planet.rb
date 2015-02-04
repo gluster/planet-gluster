@@ -53,8 +53,10 @@ def planet_feeds
         all_feed_entries += entries.each do |item|
           # Add feed's title & url to each item
           #item[:feed_title] = feed.title
-          item[:feed_title] = name || feed.title
+          item[:feed_name] = name
+          item[:feed_title] = feed.title || name
           item[:feed_url] = feed.url
+          item[:feed_source] = feed_url
           item[:feed_image] = info[:image]
           item[:image_rounded] = info[:rounded]
         end
