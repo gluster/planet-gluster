@@ -10,9 +10,9 @@ begin
   info = {}
 
   doc.css('outline').each do |site|
-    info[ site[:text] ] = {
+    info[ site[:text] || site[:title] ] = {
       "feed"  => site[:xmlUrl],
-      "title" => site[:title],
+      "title" => (site[:title] unless site[:text].nil?),
       "site"  => site[:htmlUrl]
     }.reject {|key, val| val.nil? || val.empty? }
   end
