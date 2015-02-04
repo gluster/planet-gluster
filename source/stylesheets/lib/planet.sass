@@ -1,0 +1,109 @@
+.planet
+
+  header.masthead
+    background: blue
+    background: #00050d // Old browsers
+    background: -ms-linear-gradient(top, #00050d 0%,#001841 86%,#001d4e 92%,#001b4b 97%,#001842 100%) // IE10+
+    background: linear-gradient(to bottom, #00050d 0%,#001841 86%,#001d4e 92%,#001b4b 97%,#001842 100%) // W3C
+    color: white
+    position: relative
+
+    h1
+      float: left
+
+      a
+        margin: 0
+        padding: 0 0 1ex 2ex
+
+    h2
+      position: absolute
+      bottom: 0
+      right: 0
+      padding: 0 2.5ex 1.25ex 0
+      opacity: 0.5
+
+  .feed
+    position: relative
+    margin: 6em 0 0
+
+    p >
+      img:not([style])
+        text-align: center
+        display: block
+        margin: 1em auto
+
+      img + img
+        text-align: center
+
+      a > img
+        margin: 0 auto
+
+        &.alignnone
+          margin: 2em auto
+          display: block
+
+      a[href$=".jpg"],
+      a[href$=".jpeg"],
+      a[href$=".png"],
+      a[href$=".gif"],
+      a[href$=".svg"],
+      a[href$=".JPG"],
+      a[href$=".JPEG"],
+      a[href$=".PNG"],
+      a[href$=".GIF"],
+      a[href$=".SVG"],
+      a[href*="flickr"]
+        border: 1px sold transparent
+        border-radius: 2px
+
+        img
+          display: block
+          margin: 1em auto
+
+        &:hover
+          border-color: #cdf
+
+  img
+    max-width: 100%
+    height: auto
+
+
+  .post
+    display: block
+    position: relative
+    padding-left: 13em
+    margin: 6rem 0 12rem
+
+    h2:first-child
+      margin: 0
+      padding: 0
+
+  .post-meta
+    position: absolute
+    left: 0
+    top: 0
+    width: 12em
+
+    a span
+      display: block
+      clear: both
+      margin: 0 auto 0.5em
+      text-align: center
+
+  .avatar
+    max-width: 96px
+    height: auto
+    position: relative
+    display: block
+    margin-bottom: 2em
+
+    &.rounded
+      border-radius: 96px
+      //border: 1px solid #999
+      box-shadow: 0px 4px 6px rgba(black, 0.15), inset 1px 1px 3px rgba(white, 0.5), inset 0 0 0 1px rgba(black, 0.5)
+      overflow: hidden
+      box-sizing: border-box
+
+    img
+      position: relative
+      z-index: -1
