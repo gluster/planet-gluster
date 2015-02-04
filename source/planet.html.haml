@@ -18,7 +18,9 @@ page_classes: planet
   - planet_feeds.take(max_recent).each do |entry|
 
     - if (oldtime.to_date != entry.published.to_date) || (oldtime.to_date == Time.now.to_date)
-      %h1.date= entry.published.strftime('%1d %h %Y')
+      %h1.datetime
+        %time.ago{datetime: entry.published.to_time.iso8601}
+        %span.date= entry.published.strftime('%1d %h %Y')
 
     - oldtime = entry.published
 
@@ -47,3 +49,7 @@ page_classes: planet
           %span.author.vcard=link_to entry[:feed_title], entry.url, {rel: 'nofollow'}
         &mdash;
         %time.published{datetime:entry.published.iso8601}= entry.published.strftime('%Y-%m-%d %1H:%m')
+
+- content_for :tail do
+  :coffee
+    do $('time.ago').timeago

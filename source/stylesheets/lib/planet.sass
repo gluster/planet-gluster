@@ -113,3 +113,32 @@
     img
       position: relative
       z-index: -1
+
+
+  h1.datetime
+    font-size: 125%
+    border-bottom: 1px solid #aaa
+    //text-align: center
+    position: relative
+    bottom: 0.5ex
+    color: #777
+    line-height: 1ex
+
+    >
+      .date,
+      time
+        background: white
+        position: relative
+        bottom: -0.5ex
+        z-index: 2
+        padding: 0 1ex
+        margin: 0 -1ex
+
+      .date
+        color: #aaa
+        z-index: 1
+        margin-left: 2ex
+
+        //&:before
+          content: "—"
+          margin: 0.5ex
