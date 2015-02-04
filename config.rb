@@ -177,6 +177,9 @@ activate :blog_helpers
 
 require 'lib/monkeypatch_blog_date.rb'
 
+require 'lib/planet.rb'
+
+
 ###
 # Development-only configuration
 ###
