@@ -44,6 +44,8 @@ def planet_feeds
     data.feeds.each do |name, info|
       feed_url = info[:feed]
 
+      next unless feed_url
+
       p info
 
       begin
