@@ -1,9 +1,47 @@
+---
+title: Planet
+page_classes: planet
+---
+
 :ruby
+  require 'nokogiri'
   require 'sanitize'
   require 'open-uri/cached'
 
+  def rewrite_uris html, base
+    begin
+      doc = Nokogiri::HTML(html)
+      base_uri = URI.parse(base)
+
+      tags = {
+        a: 'href',
+        img: 'src',
+        script: 'src'
+      }
+
+      doc.search(tags.keys.join(',')).each do |node|
+        href = tags[node.name.to_sym]
+        orig_url = node[href]
+        uri = URI.parse(orig_url)
+
+        unless uri.host
+          node[href] = if uri.path.to_s.match(/^\//)
+            "#{base_uri.scheme}://#{base_uri.host}#{orig_url}"
+          else
+            base.gsub(/\/$/, '') + '/' + orig_url
+          end
+        end
+      end
+
+      return doc.to_html
+    rescue
+      puts "Warning: Issues rewriting URIs (content may still work): #{base}"
+      return html
+    end
+  end
+
   # Maxinum number of recent posts
-  max_recent = 50
+  max_recent = 20
 
   # Posts *must* contain this case-insensitive keyword
   filter_keyword = ""
@@ -12,40 +50,65 @@
 
   if data[:feeds] # ensure data/feeds.yml exists
 
-    data.feeds.each do |feed_url|
-      feed = Feedjira::Feed.parse(open(feed_url).read)
-      entries = feed.entries
+    data.feeds.each do |name, info|
+      feed_url = info[:feed]
 
-      all_feed_entries += entries.each do |item|
-        # Add feed's title & url to each item
-        item[:feed_title] = feed.title
-        item[:feed_url] = feed.url
+      p info
+
+      begin
+        feed = Feedjira::Feed.parse(open(feed_url).read)
+        entries = feed.entries
+
+        all_feed_entries += entries.each do |item|
+          # Add feed's title & url to each item
+          #item[:feed_title] = feed.title
+          item[:feed_title] = name || feed.title
+          item[:feed_url] = feed.url
+          item[:feed_image] = info[:image]
+          item[:image_rounded] = info[:rounded]
+        end
+      rescue
+        puts "Error loading #{feed_url}"
       end
     end
 
   end
 
-  sorted_feeds = all_feed_entries.sort_by {|e| e.published}.uniq {|e| e.url}.reverse
+  sorted_feeds = all_feed_entries.reject {|e| e.published.nil? || e.id.match(/archives/)}.sort_by {|e| e.published}.uniq {|e| e.url}.reverse
 
 
-%section.planet.feed.syndicated.articles
+%section.feed.syndicated.articles
+  - oldtime = Time.now
+
   - sorted_feeds.take(max_recent).each do |entry|
 
-    - body = entry.content || entry.summary
+    - if (oldtime.to_date != entry.published.to_date) || (oldtime.to_date == Time.now.to_date)
+      %h1.date= entry.published.strftime('%1d %h %Y')
 
-    - next unless body[/#{filter_keyword}/i]
+    - oldtime = entry.published
+
+
+    - body = rewrite_uris (entry.content || entry.summary), entry['feed_url']
+
+    - next unless body[/#{filter_keyword}/i] if defined?(filter_keyword)
 
     %article.post.hentry
       %header.post-header
         %h2.post-title.entry-title{id: entry.title.parameterize}= link_to entry.title, entry.url, {rel: 'nofollow'}
 
         %header.post-meta
-        %span.byline
-          From
-          %span.author.vcard=link_to "#{entry[:feed_title]}", entry[:feed_url], {rel: 'nofollow'}
-
-        &mdash;
-
-        %time.published{datetime:entry.published.iso8601}= entry.published.strftime('%Y-%m-%d')
+          = link_to entry[:feed_url], {rel: 'nofollow'} do
+            - if entry[:feed_image]
+              %span.avatar{class: "#{'rounded' if entry[:image_rounded] != false}"}= image_tag("planet/#{entry[:feed_image]}")
+            %span.byline
+              %span.hidden From
+              %span.author.vcard= entry[:feed_title]
 
       %section.post-content.entry-content= Sanitize.clean(body, Sanitize::Config::RELAXED)
+
+      %footer.post-meta-footer
+        %span.byline
+          %span.from From
+          %span.author.vcard=link_to entry[:feed_title], entry.url, {rel: 'nofollow'}
+        &mdash;
+        %time.published{datetime:entry.published.iso8601}= entry.published.strftime('%Y-%m-%d %1H:%m')
