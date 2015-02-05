@@ -45,6 +45,7 @@
 - %w{heading body}.each do |type|
 
   - css += "/** #{type.titleize} font definition **/\n"
+  - font_family = ''
 
   - Dir.glob("#{base}/#{type}/*").each do |font|
     - font_file = font.split(/\//).last
@@ -61,5 +62,10 @@
           font-style: #{style}
           font-weight: #{weight}
           src: url("#{type}/#{font_file}") format("#{format}")
+
+  - css += capture_haml do
+    :sass
+      #{type.gsub(/heading/, 'h1,h2,h3,h4,h5,h6')}
+        font-family: "#{font_family}", sans-serif
 
 = css.gsub(/<\/{,1}style>/, '').squeeze("\n")
