@@ -1,23 +1,59 @@
 ---
-pageable: true
+title: ''
+page_classes: planet
 ---
 
+:ruby
+  require 'sanitize'
+
+  # Maxinum number of recent posts
+  max_recent = 20
+
+  # Posts *must* contain this case-insensitive keyword
+  # TODO: move to data/site.yml
+  #filter_keyword = ""
+
 - content_for :head do
-  %link(href="/blog/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml")
+  %link(href="/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml")
 
-- if defined? page_number && page_number < 2
+%section.feed.syndicated.articles
+  - oldtime = Time.now
 
-  -# First-page only stuff here
-  -# (If a blog is included below, then it may paginate)
+  - planet_feeds.take(max_recent).each do |entry|
 
-.row
+    - if (oldtime.to_date != entry.published.to_date) || (oldtime.to_date == Time.now.to_date)
+      %h1.datetime
+        %time.ago{datetime: entry.published.to_time.iso8601}
+        %span.date= entry.published.strftime('%1d %h %Y')
 
-  %section.blog-posts
+    - oldtime = entry.published
 
-    %section.container
 
-      %h2
-        = data.site.name
-        News
+    - body = rewrite_uris (entry.content || entry.summary), entry['feed_url']
 
-      = partial :blog_posts, locals: locals
+    - next unless body[/#{filter_keyword}/i] if defined?(filter_keyword)
+
+    %article.post.hentry
+      %header.post-header
+        %h2.post-title.entry-title{id: entry.title.parameterize}= link_to entry.title, entry.url, {rel: 'nofollow'}
+
+        %header.post-meta
+          = link_to entry[:feed_url], {rel: 'nofollow'} do
+            - if entry[:feed_image]
+              %span.avatar{class: "#{'rounded' if entry[:image_rounded] != false}"}= image_tag("planet/#{entry[:feed_image]}")
+            %span.byline
+              %span.hidden From
+              %span.author.vcard= entry[:feed_name]
+
+      %section.post-content.entry-content= Sanitize.clean(demote_headings(body), Sanitize::Config::RELAXED)
+
+      %footer.post-meta-footer
+        %span.byline
+          %span.from From
+          %span.author.vcard=link_to entry[:feed_title], entry.url, {rel: 'nofollow'}
+        &mdash;
+        %time.published{datetime:entry.published.iso8601}= entry.published.strftime('%Y-%m-%d %1H:%m')
+
+- content_for :tail do
+  :coffee
+    do $('time.ago').timeago
