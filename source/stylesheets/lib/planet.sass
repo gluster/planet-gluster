@@ -77,43 +77,11 @@
   .post
     display: block
     position: relative
-    padding-left: 13em
     margin: 6rem 0 12rem
 
     h2:first-child
       margin: 0
       padding: 0
-
-  .post-meta
-    position: absolute
-    left: 0
-    top: 0
-    width: 12em
-
-    a span
-      display: block
-      clear: both
-      margin: 0 auto 0.5em
-      text-align: center
-
-  .avatar
-    max-width: 96px
-    height: auto
-    position: relative
-    display: block
-    margin-bottom: 2em
-
-    &.rounded
-      border-radius: 96px
-      //border: 1px solid #999
-      box-shadow: 0px 4px 6px rgba(black, 0.15), inset 1px 1px 3px rgba(white, 0.5), inset 0 0 0 1px rgba(black, 0.5)
-      overflow: hidden
-      box-sizing: border-box
-
-    img
-      position: relative
-      z-index: -1
-
 
   h1.datetime
     font-size: 125%
@@ -143,8 +111,106 @@
           content: "—"
           margin: 0.5ex
 
+  .post-meta-footer
+    text-align: right
+    color: #999
+    margin-top: 1em
 
-  @media only screen and (max-device-width: 480px)
+  .avatar
+    max-width: 96px
+    height: auto
+    position: relative
+    display: block
+    margin-bottom: 2em
+
+    &.rounded
+      border-radius: 96px
+      //border: 1px solid #999
+      box-shadow: 0px 4px 6px rgba(black, 0.15), inset 1px 1px 3px rgba(white, 0.5), inset 0 0 0 1px rgba(black, 0.5)
+      overflow: hidden
+      box-sizing: border-box
+
+    img
+      position: relative
+      z-index: -1
+
+
+  ol, ul
+    padding: 0
+
+  li
+    padding: 0.75ex 1ex 0.75ex 0
+    margin: 0 0 0 1ex
+
+
+  @media only screen and (min-width: 641px)
+
+    .post
+      padding-left: 13em
+
+    .post-meta
+      position: absolute
+      left: 0
+      top: 0
+      width: 12em
+
+      a
+        overflow: hidden
+        position: relative
+
+      a span
+        display: block
+        clear: both
+        margin: 0 auto 0.5em
+        text-align: center
+
+
+  @media only screen and (max-width: 640px)
+    $mobile-icon-size: 3em
+
+    .avatar
+      max-width: $mobile-icon-size
+      margin-bottom: 0
+      //display: inline-block
+      //vertical-align: middle
+
+      //img
+
+    .post-meta
+      margin: 2ex 0 -4ex
+
+      .byline
+        line-height: $mobile-icon-size
+        position: relative
+        left: $mobile-icon-size
+        padding-left: 1ex
+        top: -$mobile-icon-size
+
+    .post-content
+      margin-top: 0
+
+    .post
+      margin: 3rem 0 9rem
+
+    .container
+      max-width: 100vw
+      padding: 0 1ex
+
+    h2
+      font-size: 2.25rem
+
+    h3
+      font-size: 2rem
+
+    h4
+      font-size: 1.75rem
+
+    h5
+      font-size: 1.5rem
+
+    h5
+      font-size: 1.25rem
+
     table, tr, td, th, thead, tbody
       display: block
 
