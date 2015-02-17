@@ -44,8 +44,6 @@ def planet_feeds
 
       next unless feed_url
 
-      p info
-
       begin
         feed = Feedjira::Feed.parse(open(feed_url).read)
         entries = feed.entries
