@@ -44,42 +44,6 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :partials_dir, 'layouts'
 
-###
-# Blog settings
-###
-
-activate :blog do |blog|
-  blog.prefix = 'blog/'
-  blog.layout = 'post'
-  blog.tag_template = 'tag.html'
-  blog.calendar_template = 'calendar.html'
-  blog.default_extension = '.md'
-
-  blog.sources = ':year-:month-:day-:title.html'
-  # blog.permalink = ":year/:month/:day/:title.html"
-  blog.permalink = ':year/:month/:title.html'
-  blog.year_link = ':year.html'
-  blog.month_link = ':year/:month.html'
-  # blog.day_link = ":year/:month/:day.html"
-
-  blog.taglink = 'tag/:tag.html'
-
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 99999
-
-  blog.paginate = true
-  blog.per_page = 10
-  blog.page_link = 'page=:num'
-end
-
-# activate :authors
-# activate :drafts
-
-# Enable blog layout for all blog pages
-with_layout :post do
-  page '/blog.html'
-  page '/blog/*'
-end
 
 # Make pretty URLs
 activate :directory_indexes
@@ -129,32 +93,6 @@ page '/.htacces.html', directory_index: false
 
 proxy '/.htaccess', '/.htaccess.html', locals: {}, ignore: true
 
-ready do
-  # Add author pages
-  sitemap.resources.group_by { |p| p.data['author'] }.each do |author, pages|
-    next unless author
-
-    proxy "/blog/author/#{author.parameterize.downcase}.html",
-          'author.html',
-          locals: { author: author, pages: pages },
-          ignore: true
-  end
-
-  proxy '/blog/author.html', 'author.html', ignore: true
-
-  # Add blog feeds
-  blog.tags.each do |tag_name, _tag_data|
-    next unless tag_name
-
-    proxy "/blog/tag/#{tag_name.downcase}.xml",
-          'feed.xml',
-          locals: { tag_name: tag_name },
-          ignore: true
-  end
-
-  proxy '/blog/feed.xml', 'feed.xml', ignore: true
-  proxy '/blog/tag/index.html', 'tag.html', ignore: true
-end
 
 ###
 # Helpers
@@ -171,11 +109,6 @@ end
 
 require 'lib/site_helpers.rb'
 activate :site_helpers
-
-require 'lib/blog_helpers.rb'
-activate :blog_helpers
-
-require 'lib/monkeypatch_blog_date.rb'
 
 require 'lib/planet.rb'
 
