@@ -214,7 +214,7 @@ elsif data.site.rsync
 
   deploy_config = {
     method: :rsync,
-    user: rsync.user || ENV[:USER],
+    user: rsync.user || ENV["USER"],
     host: rsync.host,
     path: rsync.path,
     port: rsync.port || 22,
