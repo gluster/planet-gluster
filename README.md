@@ -2,8 +2,6 @@
 
 It is based on [https://github.com/OSAS/middleman-planet](middleman-planet)
 which in turn is based on [https://github.com/OSAS/middleman-springboard](middleman-springboard).
-It is a ruby-based web toolchain we use within our projects at
-the Open Source and Standards team (OSAS) at Red Hat.
 
 # Middleman-Springboard
 
