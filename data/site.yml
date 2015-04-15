@@ -1,6 +1,6 @@
-name: Springboard for Middleman
-subhead: Static site construction kit
-domain: yourdomain.org
+name: Planet Gluster
+subhead: Blogging about Gluster
+domain: planet.gluster.org
 
 # Be sure to set up and install Juvia before enabling!
 #has_comments: true
@@ -16,7 +16,7 @@ logo: logo.png
 #owner: Your Name or Company
 
 # The year your site was established (for the copyright)
-#founding_year: 2013 # Defaults to current year if commented
+founding_year: 2015 # Defaults to current year if commented
 
 # Manual copyright string, to override the automatic one
 #copyright: "&copy; 2013 YOUR_NAME_HERE"
@@ -43,6 +43,12 @@ keywords:
   - Middleman
   - Springboard
   - Static site
+  - Gluster
+  - GlusterFS
+  - Cloud
+  - OpenStack
+  - Storage
+  - Big data
 
 ##
 # Deployment: OpenShift
@@ -60,7 +66,7 @@ keywords:
 # add your user@host contained within your git repo. (You may also use
 # the entire git repo line).
 
-openshift: ssh://54d33739e0b8cde6880001e9@planetmanageiq-garrett.rhcloud.com/~/git/planetmanageiq.git/
+# openshift: ssh://54d33739e0b8cde6880001e9@planetmanageiq-garrett.rhcloud.com/~/git/planetmanageiq.git/
 
 # If you'd rather use OpenShift via git instead of rsync, comment out
 # the above line and add your git URL as a 'production' remote.
@@ -85,4 +91,4 @@ openshift: ssh://54d33739e0b8cde6880001e9@planetmanageiq-garrett.rhcloud.com/~/g
 # the username of the person deploying. (You probably want to specify
 # a username.)
 #
-#rsync: ssh://foo@bar.com:99/some/path/here/
+rsync: ssh://centos@209.132.178.43:/var/www/html
