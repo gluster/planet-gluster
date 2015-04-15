@@ -91,4 +91,5 @@ keywords:
 # the username of the person deploying. (You probably want to specify
 # a username.)
 #
-rsync: ssh://centos@209.132.178.43:/var/www/html
+rsync: /var/www/planet.gluster.org
+
