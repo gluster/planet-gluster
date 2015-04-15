@@ -63,6 +63,7 @@ GEM
     i18n (0.7.0)
     json (1.8.2)
     kramdown (1.5.0)
+    libv8 (3.16.14.7)
     listen (2.8.5)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -139,6 +140,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    ref (1.0.5)
     rouge (1.8.0)
     ruby18_source_location (0.2)
     sanitize (3.1.1)
@@ -158,6 +160,9 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     stringex (2.5.2)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -193,4 +198,5 @@ DEPENDENCIES
   ruby18_source_location
   sanitize
   stringex
+  therubyracer
   wdm (~> 0.1.0)
