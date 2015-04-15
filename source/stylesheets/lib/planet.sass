@@ -1,10 +1,12 @@
-.planet
+@import compass
 
+.planet
+  $gradient1: rgba(20,20,20,1)
+  $gradient2: lighten($gradient1, 20%)
+  
   header.masthead
-    background: blue
-    background: #00050d // Old browsers
-    background: -ms-linear-gradient(top, #00050d 0%,#001841 86%,#001d4e 92%,#001b4b 97%,#001842 100%) // IE10+
-    background: linear-gradient(to bottom, #00050d 0%,#001841 86%,#001d4e 92%,#001b4b 97%,#001842 100%) // W3C
+    background: $gradient1 // Old browsers
+    +background-image(linear-gradient($gradient1, $gradient2))
     color: white
     position: relative
 
