@@ -66,6 +66,6 @@ page_classes: planet
         %time.published{ datetime:entry.published.iso8601 }
           = entry.published.strftime('%Y-%m-%d %1H:%m')
 
--# - content_for :tail do
--#  :coffee
--#    do $('time.ago').timeago
+- content_for :tail do
+  :coffee
+    do $('time.ago').timeago
