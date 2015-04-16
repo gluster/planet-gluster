@@ -91,5 +91,5 @@ keywords:
 # the username of the person deploying. (You probably want to specify
 # a username.)
 #
-rsync: /var/www/planet.gluster.org
+#ssh://foo@bar.com:99/some/path/here/
 
