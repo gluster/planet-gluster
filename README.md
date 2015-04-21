@@ -3,6 +3,26 @@
 It is based on [https://github.com/OSAS/middleman-planet](middleman-planet)
 which in turn is based on [https://github.com/OSAS/middleman-springboard](middleman-springboard).
 
+## How to add or remove feeds?
+
+Edit `data/feeds.yml` to add or remove feeds.
+
+Optionally you can add an "avatar" image (png/jpeg/svg) to 
+`source/images/planet/`. There are no strict restrictions, only that the image
+should be roughly square in aspect ratio and 96 pixels or larger in shortest 
+edge.
+
+If you don't specify an avatar for your feed, a placeholder image is displayed 
+instead. 
+
+#### Example:
+```
+Joe's Blog:
+  image: avatar_image_file.png
+  rounded: false
+  feed: [feed url]
+```
+
 # Middleman-Springboard
 
 Springboard is a starter-pack for Middleman, for quickly whipping together
