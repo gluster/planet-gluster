@@ -35,6 +35,10 @@ end
 def planet_feeds
   return $PLANET_FEEDS if $PLANET_FEEDS
 
+  # Time to force a planet feed re-fetch; 6 hours by default
+  # Configurable in data/site.yml; see "planet_refresh"
+  time_ago = (data.site['planet_refresh'] || 6) * 3600
+
   all_feed_entries = []
 
   if data[:feeds] # ensure data/feeds.yml exists
@@ -45,6 +49,8 @@ def planet_feeds
       next unless feed_url
 
       begin
+        OpenURI::Cache.invalidate(feed_url, Time.now - time_ago.to_i)
+
         feed = Feedjira::Feed.parse(open(feed_url).read)
         entries = feed.entries
 
