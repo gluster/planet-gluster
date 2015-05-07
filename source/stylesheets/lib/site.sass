@@ -1,6 +1,15 @@
+@import compass
+
 header.masthead
   text-align: center
-
+#branding
+  a
+    text-decoration: none
+    +link-colors($gray-light)
+  a:hover
+    +link-colors(white)
+  #logo
+    margin-left: -24px
   nav
     max-width: 50%
     margin: 0 auto
