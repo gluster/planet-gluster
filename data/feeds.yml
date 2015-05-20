@@ -236,3 +236,8 @@ zDevOps:
   image: ant.png
   rounded: false
   feed: http://zdevops.tumblr.com/tagged/glusterfs/rss
+
+Anoop C S:
+  image: anoopcs.png
+  rounded: true
+  feed: https://openforums.wordpress.com/tag/glusterfs/feed/
