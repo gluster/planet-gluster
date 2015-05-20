@@ -187,6 +187,11 @@ Red Hat Open Source Community:
   rounded: false
   feed: http://community.redhat.com/blog/tag/glusterfs.xml
 
+Red Hat Storage:
+  image: ant.png
+  rounded: false
+  feed: http://redhatstorage.redhat.com/category/gluster/feed/
+
 Severalnines - high availability alfresco:
   image: ant.png
   rounded: false
