@@ -92,10 +92,10 @@ GlusterFS:
   rounded: false
   feed: https://glusterants.wordpress.com/feed/
 
-GlusterFS blog posts - @aravindavk:
-  image: ant.png
-  rounded: false
-  feed: http://aravindavk.in/tag-glusterfs.xml
+Gluster blog posts - @aravindavk:
+  image: aravindavk.jpg
+  rounded: true
+  feed: http://aravindavk.in/feeds/tag-glusterfsblog.atom.xml
 
 Howtoforge Linux Howtos und Tutorials:
   image: ant.png
