@@ -1,3 +1,17 @@
+# This is the RSS feed listing for http://planet.gluster.org
+# You can submit a pull request to have your own gluster-related
+# blog feed added (or have it removed / changed).
+#
+# Options:
+#  - first line in the structure is your name.
+#  - image: optional png/jpeg avatar image, it gets scaled 
+#    to 96 pixels width. If you have no image, the placeholder
+#    ant is required.
+#  - rounded: whether to round the corners like on Google services.
+#  - feed: direct link to the XML feed, preferably filtered by
+#    tag or category to include gluster-related postings to keep
+#    things on topic :-)
+
 Ad Infinitum:
   image: ant.png
   rounded: false
