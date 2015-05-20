@@ -6,7 +6,7 @@
 #  - first line in the structure is your name.
 #  - image: optional png/jpeg avatar image, it gets scaled 
 #    to 96 pixels width. If you have no image, the placeholder
-#    ant is required.
+#    ant is required. Put it into source/images/planet/.
 #  - rounded: whether to round the corners like on Google services.
 #  - feed: direct link to the XML feed, preferably filtered by
 #    tag or category to include gluster-related postings to keep
