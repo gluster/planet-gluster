@@ -222,3 +222,8 @@ zDevOps:
   image: ant.png
   rounded: false
   feed: http://zdevops.tumblr.com/tagged/glusterfs/rss
+
+Gluster on kshlm's blog:
+  image: kshlm.png
+  rounded: true
+  feed: https://kshlm.in/tag/gluster/rss
