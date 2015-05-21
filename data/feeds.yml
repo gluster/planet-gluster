@@ -30,12 +30,12 @@ andrewklau:
 Bharata B Rao's Blog » gluster:
   image: ant.png
   rounded: false
-  feed: http://raobharata.wordpress.com/tag/gluster/feed/
+  feed: https://raobharata.wordpress.com/tag/gluster/feed/
 
 Just Another Linux Blog:
   image: ant.png
   rounded: false
-  feed: http://www.chriscowley.me.uk/blog/categories/storage/atom.xml
+  feed: https://www.chriscowley.me.uk/blog/categories/storage/atom.xml
 
 Celingest Blog - Feel the Cloud » GlusterFS:
   image: ant.png
@@ -60,7 +60,7 @@ Est modus matulae:
 Free Software, Open Source And My Life Around That » GlusterFS:
   image: ant.png
   rounded: false
-  feed: http://lalatendumohanty.wordpress.com/category/glusterfs/feed/
+  feed: https://lalatendumohanty.wordpress.com/category/glusterfs/feed/
 
 gluster at Opensource.com:
   image: ant.png
@@ -100,7 +100,7 @@ Gluster blog posts - @aravindavk:
 Howtoforge Linux Howtos und Tutorials:
   image: ant.png
   rounded: false
-  feed: http://www.howtoforge.com/feed.rss
+  feed: https://www.howtoforge.com/feed.rss
 
 JamesCoyle.net » GlusterFS:
   image: ant.png
@@ -115,7 +115,7 @@ Jason Brooks:
 Jason Ruiz » Storage:
   image: ant.png
   rounded: false
-  feed: http://blog.coildomain.com/category/storage/feed/
+  feed: https://blog.coildomain.com/category/storage/feed/
 
 jayunit100:
   image: ant.png
@@ -125,7 +125,7 @@ jayunit100:
 Joe Julian's Blog:
   image: ant.png
   rounded: false
-  feed: http://joejulian.name/blog/feeds/rss/
+  feed: https://joejulian.name/blog/feeds/rss/
 
 Jon Archer » gluster:
   image: ant.png
@@ -140,7 +140,7 @@ Linux Journal GlusterFS Feed:
 Mjanja Tech » GlusterFS:
   image: ant.png
   rounded: false
-  feed: http://mjanja.co.ke/tag/glusterfs/feed/
+  feed: https://mjanja.co.ke/tag/glusterfs/feed/
 
 My Humble Abode:
   image: ant.png
@@ -150,7 +150,7 @@ My Humble Abode:
 Neependra » glusterfs:
   image: ant.png
   rounded: false
-  feed: http://neependra.net/?tag=glusterfs&amp;feed=atom?tag=glusterfs&amp;fee.
+  feed: https://neependra.net/?tag=glusterfs&amp;feed=atom?tag=glusterfs&amp;fee.
 
 Nixpanic's Blog:
   image: ant.png
@@ -220,17 +220,17 @@ The Cloud Evangelist » Gluster:
 The Technical Blog of James » puppet-gluster:
   image: ant.png
   rounded: false
-  feed: http://ttboj.wordpress.com/tag/puppet-gluster/feed/
+  feed: https://ttboj.wordpress.com/tag/puppet-gluster/feed/
 
 Tropical Devel » OpenStack:
   image: ant.png
   rounded: false
-  feed: http://tropicaldevel.wordpress.com/category/openstack/feed/
+  feed: https://tropicaldevel.wordpress.com/category/openstack/feed/
 
 Vijay Bellur:
   image: ant.png
   rounded: false
-  feed: http://vbellur.wordpress.com/feed/
+  feed: https://vbellur.wordpress.com/feed/
 
 Xen Virtualization on Linux and Solaris:
   image: ant.png
