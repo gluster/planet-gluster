@@ -23,17 +23,13 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   end
 
   relevant_entries.take(50).each do |entry|
-    #nickname = entry.data.author
-    p entry
-
     xml.entry do
       xml.title entry.title
       xml.link "rel" => "alternate", "href" => URI.join(site_url, entry.url)
       xml.id URI.join(site_url, entry.url)
-      xml.published entry.published #.to_time.iso8601
-      xml.updated entry.updated || entry.published #.to_time.iso8601 #File.mtime(entry.source_file).iso8601
+      xml.published entry.published
+      xml.updated entry.updated || entry.published
       xml.author entry.author || entry[:feed_title]
-      #xml.summary demote_headings(entry.summary), "type" => "html"
       xml.content demote_headings(rewrite_uris((entry.content || entry.summary), entry['feed_url'])), "type" => "html"
     end
   end
