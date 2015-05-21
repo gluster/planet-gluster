@@ -5,6 +5,9 @@ domain: planet.gluster.org
 # Number of hours to ensure invalidated cache, and feeds are re-fetched
 planet_refresh: 6
 
+# Number of hours to ensure invalidated cache, and feeds are re-fetched
+planet_refresh: 6
+
 # Be sure to set up and install Juvia before enabling!
 #has_comments: true
 
