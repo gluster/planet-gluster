@@ -246,3 +246,8 @@ Anoop C S:
   image: anoopcs.png
   rounded: true
   feed: https://openforums.wordpress.com/tag/glusterfs/feed/
+
+Gluster on kshlm's blog:
+  image: kshlm.png
+  rounded: true
+  feed: https://kshlm.in/tag/gluster/rss
