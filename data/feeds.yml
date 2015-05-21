@@ -27,12 +27,12 @@ andrewklau:
   rounded: false
   feed: http://www.andrewklau.com/rss/
 
-Bharata B Rao's Blog » gluster:
+Bharata B Rao:
   image: ant.png
   rounded: false
   feed: https://raobharata.wordpress.com/tag/gluster/feed/
 
-Just Another Linux Blog:
+Chris Cowley:
   image: ant.png
   rounded: false
   feed: https://chriscowley.me.uk/feeds/storage.atom.xml
