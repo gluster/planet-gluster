@@ -35,7 +35,7 @@ Bharata B Rao's Blog » gluster:
 Just Another Linux Blog:
   image: ant.png
   rounded: false
-  feed: https://www.chriscowley.me.uk/blog/categories/storage/atom.xml
+  feed: https://chriscowley.me.uk/feeds/storage.atom.xml
 
 Celingest Blog - Feel the Cloud » GlusterFS:
   image: ant.png
@@ -72,11 +72,6 @@ Gluster Community Day Events:
   rounded: false
   feed: https://www.eventbrite.com/rss/user_list_events/1386959226
 
-Gluster Community Website:
-  image: ant.png
-  rounded: false
-  feed: http://hekafs.org/index.php/feed/
-
 Gluster Community Website » glusterfs:
   image: ant.png
   rounded: false
@@ -97,10 +92,11 @@ Gluster blog posts - @aravindavk:
   rounded: true
   feed: http://aravindavk.in/feeds/tag-glusterfsblog.atom.xml
 
-Howtoforge Linux Howtos und Tutorials:
-  image: ant.png
-  rounded: false
-  feed: https://www.howtoforge.com/feed.rss
+# this needs a tag or category, disabling for now
+#Howtoforge Linux Howtos und Tutorials:
+#  image: ant.png
+#  rounded: false
+#  feed: https://www.howtoforge.com/feed.rss
 
 JamesCoyle.net » GlusterFS:
   image: ant.png
