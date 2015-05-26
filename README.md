@@ -1,7 +1,8 @@
-# Planet Gluster is a blog feed aggregator website ("Planet").
+# [Planet Gluster](http://planet.gluster.org) is a blog aggregator.
 
-It is based on [https://github.com/OSAS/middleman-planet](middleman-planet)
-which in turn is based on [https://github.com/OSAS/middleman-springboard](middleman-springboard).
+It is based on [middleman-planet](https://github.com/OSAS/middleman-planet)
+which in turn is based on [middleman-springboard](https://github.com/OSAS/middleman-springboard). 
+It combines the article feeds from several blog and news sites into one web page.
 
 ## How to add or remove feeds?
 
