@@ -92,6 +92,11 @@ Gluster blog posts - @aravindavk:
   rounded: true
   feed: http://aravindavk.in/feeds/tag-glusterfsblog.atom.xml
 
+Gluster.org News:
+  image: ant.png
+  rounded: false
+  feed: http://www.gluster.org/news/feed.xml
+
 # this needs a tag or category, disabling for now
 #Howtoforge Linux Howtos und Tutorials:
 #  image: ant.png
