@@ -27,6 +27,11 @@ andrewklau:
   rounded: false
   feed: http://www.andrewklau.com/rss/
 
+atinmu's Blog:
+  image: ant.png
+  rounded: false
+  feed: https://atinmu.wordpress.com/feed/
+
 Bharata B Rao:
   image: ant.png
   rounded: false
