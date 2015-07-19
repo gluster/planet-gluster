@@ -126,7 +126,7 @@ Jason Ruiz » Storage:
 jayunit100:
   image: ant.png
   rounded: false
-  feed: http://jayunit100.blogspot.com/feeds/posts/default
+  feed: http://jayunit100.blogspot.com/feeds/posts/default/-/Gluster
 
 Joe Julian's Blog:
   image: ant.png
