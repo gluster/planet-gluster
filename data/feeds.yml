@@ -252,3 +252,8 @@ Gluster on kshlm's blog:
   image: kshlm.png
   rounded: true
   feed: https://kshlm.in/tag/gluster/rss
+
+Gluster on medium.com/@msvbhat's articles:
+  image: ant.png
+  rounded: true
+  feed: http://medium.com/feed/tag/gluster
