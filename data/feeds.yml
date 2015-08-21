@@ -116,7 +116,7 @@ JamesCoyle.net » GlusterFS:
 Jason Brooks:
   image: ant.png
   rounded: false
-  feed: http://blog.jebpages.com/feed.xml
+  feed: http://blog.jebpages.com/blog/feed.xml
 
 Jason Ruiz » Storage:
   image: ant.png
