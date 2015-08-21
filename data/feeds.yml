@@ -27,7 +27,7 @@ andrewklau:
   rounded: false
   feed: http://www.andrewklau.com/rss/
 
-atinmu's Blog:
+'atinmu''s Blog':
   image: ant.png
   rounded: false
   feed: https://atinmu.wordpress.com/feed/
@@ -128,7 +128,7 @@ jayunit100:
   rounded: false
   feed: http://jayunit100.blogspot.com/feeds/posts/default/-/Gluster
 
-Joe Julian's Blog:
+'Joe Julian''s Blog':
   image: ant.png
   rounded: false
   feed: https://joejulian.name/blog/feeds/rss/
@@ -158,7 +158,7 @@ Neependra » glusterfs:
   rounded: false
   feed: https://neependra.net/?tag=glusterfs&amp;feed=atom?tag=glusterfs&amp;fee.
 
-Nixpanic's Blog:
+'Nixpanic''s Blog':
   image: ant.png
   rounded: false
   feed: http://blog.nixpanic.net/feeds/posts/default/-/Gluster
@@ -213,7 +213,7 @@ TechnoSophos:
   rounded: false
   feed: http://technosophos.com/feed.xml
 
-Tecmint Linux Howtos, Tutorials & Guides:
+'Tecmint Linux Howtos, Tutorials & Guides':
   image: ant.png
   rounded: false
   feed: http://www.tecmint.com/category/glusterfs-2/feed/
@@ -248,12 +248,12 @@ Anoop C S:
   rounded: true
   feed: https://openforums.wordpress.com/tag/glusterfs/feed/
 
-Gluster on kshlm's blog:
+'Gluster on kshlm''s blog':
   image: kshlm.png
   rounded: true
   feed: https://kshlm.in/tag/gluster/rss
 
-Gluster on medium.com/@msvbhat's articles:
+'Gluster on medium.com/@msvbhat''s articles':
   image: ant.png
   rounded: true
   feed: https://medium.com/feed/tag/gluster
