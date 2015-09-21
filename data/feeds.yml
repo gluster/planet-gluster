@@ -208,11 +208,6 @@ shanks:
   rounded: false
   feed: http://feeds.feedburner.com/GowrishankarRajaiyan
 
-TechnoSophos:
-  image: ant.png
-  rounded: false
-  feed: http://technosophos.com/feed.xml
-
 'Tecmint Linux Howtos, Tutorials & Guides':
   image: ant.png
   rounded: false
