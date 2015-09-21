@@ -257,3 +257,8 @@ Anoop C S:
   image: ant.png
   rounded: true
   feed: https://medium.com/feed/tag/gluster
+
+Sachidananda Urs:
+  image: ant.png
+  rounded: false
+  feed: http://sacurs.blogspot.com/feeds/posts/default/-/GlusterFS
