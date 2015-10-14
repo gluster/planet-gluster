@@ -176,7 +176,7 @@ Open Source Storage:
 Platypus Reloaded:
   image: ant.png
   rounded: false
-  feed: http://pl.atyp.us/feeds/feed.rss
+  feed: http://pl.atyp.us/feeds/cat-technical.rss
 
 Recent Articles for tag glusterfs:
   image: ant.png
