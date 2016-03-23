@@ -138,6 +138,11 @@ Jon Archer » gluster:
   rounded: false
   feed: http://jonarcher.info/tag/gluster/feed/
 
+joelearnsopensource''s Blog:
+  image: ant.png
+  rounded: false
+  feed: https://joelearnsopensource.wordpress.com/tag/gluster/feed/
+
 Linux Journal GlusterFS Feed:
   image: ant.png
   rounded: false
