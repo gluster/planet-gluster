@@ -137,6 +137,11 @@ Jon Archer » gluster:
   image: ant.png
   rounded: false
   feed: http://jonarcher.info/tag/gluster/feed/
+  
+'joelearnsopensource''s Blog':
+  image: ant.png
+  rounded: false
+  feed: https://joelearnsopensource.wordpress.com/feed/
 
 joelearnsopensource''s Blog:
   image: ant.png
