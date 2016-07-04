@@ -251,7 +251,7 @@ Anoop C S:
 'Gluster on kshlm''s blog':
   image: kshlm.png
   rounded: true
-  feed: https://kshlm.in/tag/gluster/rss
+  feed: https://kshlm.in/index.xml
 
 'Gluster on medium.com/@msvbhat''s articles':
   image: ant.png
