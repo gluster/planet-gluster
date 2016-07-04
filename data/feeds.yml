@@ -191,7 +191,8 @@ Red Hat Storage:
 Severalnines - high availability alfresco:
   image: ant.png
   rounded: false
-  feed: http://www.severalnines.com/taxonomy/term/122/0/feed
+  feed: http://severalnines.com/rss.xml
+  filter: gluster
 
 shanks:
   image: ant.png
