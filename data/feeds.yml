@@ -4,7 +4,7 @@
 #
 # Options:
 #  - first line in the structure is your name.
-#  - image: optional png/jpeg avatar image, it gets scaled 
+#  - image: optional png/jpeg avatar image, it gets scaled
 #    to 96 pixels width. If you have no image, the placeholder
 #    ant is required. Put it into source/images/planet/.
 #  - rounded: whether to round the corners like on Google services.
@@ -236,7 +236,7 @@ Anoop C S:
 'Gluster on kshlm''s blog':
   image: kshlm.png
   rounded: true
-  feed: https://kshlm.in/tag/gluster/rss
+  feed: https://kshlm.in/tags/gluster/index.xml
 
 'Gluster on medium.com/@msvbhat''s articles':
   image: ant.png
