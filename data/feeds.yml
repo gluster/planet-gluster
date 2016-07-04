@@ -151,7 +151,7 @@ My Humble Abode:
 Neependra » glusterfs:
   image: ant.png
   rounded: false
-  feed: https://neependra.net/?tag=glusterfs&amp;feed=atom?tag=glusterfs&amp;fee.
+  feed: http://neependra.net/?feed=atom&category=glusterfs
 
 'Nixpanic''s Blog':
   image: ant.png
