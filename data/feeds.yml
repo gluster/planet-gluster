@@ -126,7 +126,7 @@ jayunit100:
 Jon Archer » gluster:
   image: ant.png
   rounded: false
-  feed: http://jonarcher.info/tag/gluster/feed/
+  feed: https://jonarcher.info/tag/gluster/feed/
 
 joelearnsopensource''s Blog:
   image: ant.png
