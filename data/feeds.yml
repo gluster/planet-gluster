@@ -158,11 +158,6 @@ Neependra » glusterfs:
   rounded: false
   feed: http://blog.nixpanic.net/feeds/posts/default/-/Gluster
 
-OneFellow:
-  image: ant.png
-  rounded: false
-  feed: https://www.blogger.com/feeds/7976893974966932012/posts/default
-
 Open Source Storage:
   image: ant.png
   rounded: false
