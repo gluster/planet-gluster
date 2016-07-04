@@ -104,6 +104,7 @@ def planet_feeds
         item[:feed_source]   = feed_url
         item[:feed_image]    = info[:image]
         item[:image_rounded] = info[:rounded]
+        item[:filter]        = info[:filter]
       end
     end
 

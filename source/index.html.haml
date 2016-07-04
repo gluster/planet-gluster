@@ -30,6 +30,7 @@ page_classes: planet
     - oldtime = entry.published
     - body = rewrite_uris (entry.content || entry.summary), entry['feed_url']
     - next unless body[/#{data.site.filter_keyword}/i] if defined?(data.site.filter_keyword)
+    - next unless body[/#{entry['filter']}/i] if defined?(entry['filter'])
 
     %article.post.hentry
 
