@@ -9,9 +9,8 @@ page_classes: planet
   # Maxinum number of recent posts
   max_recent = 20
 
-  # Posts *must* contain this case-insensitive keyword
-  # TODO: move to data/site.yml
-  #filter_keyword = ""
+  # Posts *must* contain a case-insensitive keyword defined in data/site.yml as
+  # filter_keyword
 
 - content_for :head do
   %link(href="/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml")
@@ -30,7 +29,7 @@ page_classes: planet
 
     - oldtime = entry.published
     - body = rewrite_uris (entry.content || entry.summary), entry['feed_url']
-    - next unless body[/#{filter_keyword}/i] if defined?(filter_keyword)
+    - next unless body[/#{data.site.filter_keyword}/i] if defined?(data.site.filter_keyword)
 
     %article.post.hentry
 
