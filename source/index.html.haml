@@ -22,15 +22,15 @@ page_classes: planet
     - old_date = oldtime.to_date
     - published_date = entry.published.to_date
 
-    - if (old_date != published_date) || (old_date == Time.now.to_date)
-      %h1.datetime
-        %time.ago{ datetime: entry.published.to_time.iso8601 }
-        %span.date= entry.published.strftime('%1d %h %Y')
-
     - oldtime = entry.published
     - body = rewrite_uris (entry.content || entry.summary), entry['feed_url']
     - next unless body[/#{data.site.filter_keyword}/i] if defined?(data.site.filter_keyword)
     - next unless body[/#{entry['filter']}/i] if defined?(entry['filter'])
+
+    - if (old_date != published_date) || (old_date == Time.now.to_date)
+      %h1.datetime
+        %time.ago{ datetime: entry.published.to_time.iso8601 }
+        %span.date= entry.published.strftime('%1d %h %Y')
 
     %article.post.hentry
 
