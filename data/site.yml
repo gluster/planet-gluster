@@ -53,6 +53,8 @@ keywords:
   - Storage
   - Big data
 
+filter_keyword: gluster
+
 ##
 # Deployment: OpenShift
 ##

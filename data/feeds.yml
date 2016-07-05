@@ -4,7 +4,7 @@
 #
 # Options:
 #  - first line in the structure is your name.
-#  - image: optional png/jpeg avatar image, it gets scaled 
+#  - image: optional png/jpeg avatar image, it gets scaled
 #    to 96 pixels width. If you have no image, the placeholder
 #    ant is required. Put it into source/images/planet/.
 #  - rounded: whether to round the corners like on Google services.
@@ -47,11 +47,6 @@ Celingest Blog - Feel the Cloud » GlusterFS:
   rounded: false
   feed: http://blog.celingest.com/en/tag/glusterfs/feed/
 
-Developer in Charge » gluster:
-  image: ant.png
-  rounded: false
-  feed: http://devincharge.com/gluster/feed/
-
 Dissociated Press » Gluster:
   image: ant.png
   rounded: false
@@ -65,7 +60,7 @@ Est modus matulae:
 Free Software, Open Source And My Life Around That » GlusterFS:
   image: ant.png
   rounded: false
-  feed: https://lalatendumohanty.wordpress.com/category/glusterfs/feed/
+  feed: https://lalatendu.org/category/glusterfs/feed/
 
 gluster at Opensource.com:
   image: ant.png
@@ -118,11 +113,6 @@ Jason Brooks:
   rounded: false
   feed: http://blog.jebpages.com/blog/feed.xml
 
-Jason Ruiz » Storage:
-  image: ant.png
-  rounded: false
-  feed: https://blog.coildomain.com/category/storage/feed/
-
 jayunit100:
   image: ant.png
   rounded: false
@@ -136,7 +126,7 @@ jayunit100:
 Jon Archer » gluster:
   image: ant.png
   rounded: false
-  feed: http://jonarcher.info/tag/gluster/feed/
+  feed: https://jonarcher.info/tag/gluster/feed/
 
 joelearnsopensource''s Blog:
   image: ant.png
@@ -151,7 +141,7 @@ Linux Journal GlusterFS Feed:
 Mjanja Tech » GlusterFS:
   image: ant.png
   rounded: false
-  feed: https://mjanja.co.ke/tag/glusterfs/feed/
+  feed: https://mjanja.ch/tag/glusterfs/feed/
 
 My Humble Abode:
   image: ant.png
@@ -161,17 +151,12 @@ My Humble Abode:
 Neependra » glusterfs:
   image: ant.png
   rounded: false
-  feed: https://neependra.net/?tag=glusterfs&amp;feed=atom?tag=glusterfs&amp;fee.
+  feed: http://neependra.net/?feed=atom&category=glusterfs
 
 'Nixpanic''s Blog':
   image: ant.png
   rounded: false
   feed: http://blog.nixpanic.net/feeds/posts/default/-/Gluster
-
-OneFellow:
-  image: ant.png
-  rounded: false
-  feed: https://www.blogger.com/feeds/7976893974966932012/posts/default
 
 Open Source Storage:
   image: ant.png
@@ -206,7 +191,8 @@ Red Hat Storage:
 Severalnines - high availability alfresco:
   image: ant.png
   rounded: false
-  feed: http://www.severalnines.com/taxonomy/term/122/0/feed
+  feed: http://severalnines.com/rss.xml
+  filter: gluster
 
 shanks:
   image: ant.png
@@ -251,7 +237,7 @@ Anoop C S:
 'Gluster on kshlm''s blog':
   image: kshlm.png
   rounded: true
-  feed: https://kshlm.in/tag/gluster/rss
+  feed: https://kshlm.in/tags/gluster/index.xml
 
 'Gluster on medium.com/@msvbhat''s articles':
   image: ant.png
