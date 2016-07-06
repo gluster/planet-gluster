@@ -132,6 +132,11 @@ joelearnsopensource''s Blog:
   image: ant.png
   rounded: false
   feed: https://joelearnsopensource.wordpress.com/tag/gluster/feed/
+  
+Karthik U S:
+  image: ant.png
+  rounded: false
+  feed: http://uskarthik.blogspot.com/feeds/posts/default/-/gluster
 
 Linux Journal GlusterFS Feed:
   image: ant.png
