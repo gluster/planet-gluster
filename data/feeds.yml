@@ -136,7 +136,7 @@ Karthik U S:
 Linux Journal GlusterFS Feed:
   image: ant.png
   rounded: false
-  feed: http://www.linuxjournal.com/tag/glusterfs/feed
+  feed: https://www.linuxjournal.com/taxonomy/term/906/all/feed
 
 Mjanja Tech » GlusterFS:
   image: ant.png
