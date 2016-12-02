@@ -62,11 +62,6 @@ Free Software, Open Source And My Life Around That » GlusterFS:
   rounded: false
   feed: https://lalatendu.org/category/glusterfs/feed/
 
-gluster at Opensource.com:
-  image: ant.png
-  rounded: false
-  feed: https://opensource.com/feed/tags/gluster
-
 Gluster Community Day Events:
   image: ant.png
   rounded: false
@@ -172,11 +167,6 @@ Platypus Reloaded:
   image: ant.png
   rounded: false
   feed: http://pl.atyp.us/feeds/cat-technical.rss
-
-Recent Articles for tag glusterfs:
-  image: ant.png
-  rounded: false
-  feed: http://blog.flaper87.com/feeds/latest/tag/glusterfs/
 
 Red Hat Open Source Community:
   image: ant.png
