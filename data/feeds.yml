@@ -25,7 +25,7 @@ Alex Frazer:
 andrewklau:
   image: ant.png
   rounded: false
-  feed: http://www.andrewklau.com/rss/
+  feed: https://www.andrewklau.com/rss/
 
 'atinmu''s Blog':
   image: ant.png
@@ -95,7 +95,7 @@ Gluster blog posts - @aravindavk:
 Gluster.org News:
   image: ant.png
   rounded: false
-  feed: http://www.gluster.org/news/feed.xml
+  feed: https://www.gluster.org/news/feed.xml
 
 # this needs a tag or category, disabling for now
 #Howtoforge Linux Howtos und Tutorials:
@@ -106,7 +106,7 @@ Gluster.org News:
 JamesCoyle.net » GlusterFS:
   image: ant.png
   rounded: false
-  feed: http://www.jamescoyle.net/tag/glusterfs/feed
+  feed: https://www.jamescoyle.net/tag/glusterfs/feed
 
 Jason Brooks:
   image: ant.png
