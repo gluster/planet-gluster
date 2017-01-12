@@ -25,7 +25,7 @@ Alex Frazer:
 andrewklau:
   image: ant.png
   rounded: false
-  feed: http://www.andrewklau.com/rss/
+  feed: https://www.andrewklau.com/rss/
 
 'atinmu''s Blog':
   image: ant.png
@@ -62,11 +62,6 @@ Free Software, Open Source And My Life Around That » GlusterFS:
   rounded: false
   feed: https://lalatendu.org/category/glusterfs/feed/
 
-gluster at Opensource.com:
-  image: ant.png
-  rounded: false
-  feed: https://opensource.com/feed/tags/gluster
-
 Gluster Community Day Events:
   image: ant.png
   rounded: false
@@ -95,7 +90,7 @@ Gluster blog posts - @aravindavk:
 Gluster.org News:
   image: ant.png
   rounded: false
-  feed: http://www.gluster.org/news/feed.xml
+  feed: https://www.gluster.org/news/feed.xml
 
 # this needs a tag or category, disabling for now
 #Howtoforge Linux Howtos und Tutorials:
@@ -106,7 +101,7 @@ Gluster.org News:
 JamesCoyle.net » GlusterFS:
   image: ant.png
   rounded: false
-  feed: http://www.jamescoyle.net/tag/glusterfs/feed
+  feed: https://www.jamescoyle.net/tag/glusterfs/feed
 
 Jason Brooks:
   image: ant.png
@@ -141,7 +136,7 @@ Karthik U S:
 Linux Journal GlusterFS Feed:
   image: ant.png
   rounded: false
-  feed: http://www.linuxjournal.com/tag/glusterfs/feed
+  feed: https://www.linuxjournal.com/taxonomy/term/906/all/feed
 
 Mjanja Tech » GlusterFS:
   image: ant.png
@@ -172,11 +167,6 @@ Platypus Reloaded:
   image: ant.png
   rounded: false
   feed: http://pl.atyp.us/feeds/cat-technical.rss
-
-Recent Articles for tag glusterfs:
-  image: ant.png
-  rounded: false
-  feed: http://blog.flaper87.com/feeds/latest/tag/glusterfs/
 
 Red Hat Open Source Community:
   image: ant.png
