@@ -132,7 +132,7 @@ joelearnsopensource''s Blog:
   image: ant.png
   rounded: false
   feed: https://joelearnsopensource.wordpress.com/tag/gluster/feed/
-  
+
 Karthik U S:
   image: ant.png
   rounded: false
@@ -268,8 +268,13 @@ Gaurav Kumar Garg:
   image: ant.png
   rounded: false
   feed: https://ggargblogs.wordpress.com/tag/glusterfs/feed/
-  
+
 Saravana's Gluster Blog:
   image: ant.png
   rounded: false
   feed: http://uyirpodiru.blogspot.com/feeds/posts/default/-/gluster
+
+nigelb:
+  image: nigel.jpg
+  rounded: true
+  feed: https://nigelb.me/gluster.xml
