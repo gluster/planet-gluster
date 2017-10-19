@@ -186,7 +186,7 @@ Red Hat Storage:
 Severalnines - high availability alfresco:
   image: ant.png
   rounded: false
-  feed: http://severalnines.com/rss.xml
+  feed: https://severalnines.com/rss.xml
   filter: gluster
 
 shanks:
@@ -197,7 +197,7 @@ shanks:
 'Tecmint Linux Howtos, Tutorials & Guides':
   image: ant.png
   rounded: false
-  feed: http://www.tecmint.com/category/glusterfs-2/feed/
+  feed: https://www.tecmint.com/category/glusterfs-2/feed/
 
 The Cloud Evangelist » Gluster:
   image: ant.png
