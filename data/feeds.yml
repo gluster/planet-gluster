@@ -268,3 +268,8 @@ nigelb:
   image: nigel.jpg
   rounded: true
   feed: https://nigelb.me/gluster.xml
+
+Devyani Kota:
+  image: ant.png
+  rounded: false
+  feed: https://devyani7kota.wordpress.com/category/glusterfs/feed/
