@@ -146,7 +146,7 @@ Mjanja Tech » GlusterFS:
 My Humble Abode:
   image: ant.png
   rounded: false
-  feed: http://website-humblec.rhcloud.com/category/filesystems/glusterfs/feed/
+  feed: http://humblec.com/category/filesystems/glusterfs/feed/
 
 Neependra » glusterfs:
   image: ant.png
