@@ -87,6 +87,11 @@ Gluster blog posts - @aravindavk:
   rounded: true
   feed: http://aravindavk.in/feeds/tag-glusterfsblog.atom.xml
 
+Gluster blog posts - @itisravi:
+  image: itisravi.jpg
+  rounded: false
+  feed: https://ravispeaks.wordpress.com/category/gluster/feed
+
 Gluster.org News:
   image: ant.png
   rounded: false
