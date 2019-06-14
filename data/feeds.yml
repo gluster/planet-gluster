@@ -293,3 +293,8 @@ Prasanna Kumar Kalever » gluster-block:
   image: gluster-block.png
   rounded: false
   feed: https://pkalever.wordpress.com/tag/gluster-block/feed/
+
+Gluster Developer Blog posts:
+  image: ant.jpg
+  rounded: false
+  feed: https://gluster.github.com/devblog/feed.xml
