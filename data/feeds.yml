@@ -249,6 +249,11 @@ Gluster articles on Medium:
   rounded: true
   feed: https://medium.com/feed/tag/gluster
 
+GlusterFS articles on Medium:
+  image: ant.png
+  rounded: true
+  feed: https://medium.com/feed/tag/glusterfs
+
 Sachidananda Urs:
   image: ant.png
   rounded: false
