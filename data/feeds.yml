@@ -12,6 +12,11 @@
 #    tag or category to include gluster-related postings to keep
 #    things on topic :-)
 
+Gluster blog posts - @sacharya:
+  image: ant.png
+  rounded: false
+  feed: https://shwetha174.blogspot.com/feeds/posts/default/-/Gluster/?alt=rss
+
 Ad Infinitum:
   image: ant.png
   rounded: false
