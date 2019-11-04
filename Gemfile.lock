@@ -53,7 +53,8 @@ GEM
     ffi (1.9.8)
     font-awesome-middleman (4.2.3)
       middleman-core (~> 3.0)
-    haml (4.0.6)
+    haml (5.1.2)
+      temple (>= 0.8.0)
       tilt
     hike (1.2.3)
     hitimes (1.2.2)
@@ -160,6 +161,7 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     stringex (2.5.2)
+    temple (0.8.2)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
