@@ -37,7 +37,7 @@ page_classes: planet
 
       %header.post-header
 
-        %h2.post-title.entry-title{ id: entry.title.parameterize }
+        %h2.post-title.entry-title{ id: (entry.title || '').parameterize }
           = link_to entry.title, entry.url, {rel: 'nofollow'}
 
         %header.post-meta
