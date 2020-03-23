@@ -65,8 +65,9 @@ end
 
 # Parse the feed, with a fallback message as to why it might not work
 def parse_feed(feed_raw, feed_url = 'unknown feed')
-  Feedjira::Feed.parse(feed_raw) unless feed_raw.to_s == ''
-rescue
+  Feedjira.parse(feed_raw) unless feed_raw.to_s == ''
+rescue StandardError => e
+  puts "ERR:  #{e.message}"
   head = http_head(feed_url)
   err_msg = if defined?(head.content_type) then "Server sent '#{head.content_type}'" else "No data sent" end
   puts "ERR:  #{err_msg}; problem parsing '#{feed_url}'"
