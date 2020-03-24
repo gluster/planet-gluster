@@ -17,7 +17,7 @@ set :relative_links, true
 
 # Set HAML to render HTML5 by default (when unspecified)
 # It's important HAML outputs "ugly" HTML to not mess with code blocks
-set :haml, format: :html5, ugly: true
+set :haml, format: :html5
 
 # Set Markdown features for Kramdown
 # (So our version of Markdown resembles GitHub's w/ other nice stuff)
