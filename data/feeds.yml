@@ -264,11 +264,6 @@ GlusterFS articles on Medium:
   rounded: true
   feed: https://medium.com/feed/tag/glusterfs
 
-Sachidananda Urs:
-  image: ant.png
-  rounded: false
-  feed: http://sacurs.blogspot.com/feeds/posts/default/-/GlusterFS
-
 Rajesh Joseph:
   image: ant.png
   rounded: false
