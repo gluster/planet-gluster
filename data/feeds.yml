@@ -219,11 +219,6 @@ shanks:
   rounded: false
   feed: https://www.tecmint.com/category/glusterfs-2/feed/
 
-The Cloud Evangelist » Gluster:
-  image: ant.png
-  rounded: false
-  feed: http://cloudevangelist.org/tag/gluster/feed/
-
 The Technical Blog of James » puppet-gluster:
   image: ant.png
   rounded: false
