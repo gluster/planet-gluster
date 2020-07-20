@@ -121,7 +121,7 @@ JamesCoyle.net » GlusterFS:
 Jason Brooks:
   image: ant.png
   rounded: false
-  feed: http://blog.jebpages.com/blog/feed.xml
+  feed: https://jebpages.com/tag/gluster/feed/
 
 jayunit100:
   image: ant.png
