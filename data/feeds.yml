@@ -176,7 +176,7 @@ Neependra » glusterfs:
 'Nixpanic''s Blog':
   image: ant.png
   rounded: false
-  feed: http://blog.nixpanic.net/feeds/posts/default/-/Gluster
+  feed: http://nixpanic.net/tags/gluster/index.xml
 
 Open Source Storage:
   image: ant.png
