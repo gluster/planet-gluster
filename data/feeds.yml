@@ -105,7 +105,7 @@ Gluster blog posts - @rafikc30:
 Gluster.org News:
   image: ant.png
   rounded: false
-  feed: https://www.gluster.org/news/feed.xml
+  feed: https://www.gluster.org/feed/
 
 # this needs a tag or category, disabling for now
 #Howtoforge Linux Howtos und Tutorials:
