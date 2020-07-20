@@ -131,7 +131,7 @@ jayunit100:
 'Joe Julian''s Blog':
   image: ant.png
   rounded: false
-  feed: https://joejulian.name/blog/feeds/rss/
+  feed: https://joejulian.name/categories/glusterfs/index.xml
 
 Jon Archer » gluster:
   image: ant.png
