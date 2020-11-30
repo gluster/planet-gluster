@@ -30,7 +30,7 @@ andrewklau:
 'atinmu''s Blog':
   image: ant.png
   rounded: false
-  feed: https://atinmu.wordpress.com/feed/
+  feed: https://atinmu.wordpress.com/tag/gluster/feed/
 
 Bharata B Rao:
   image: ant.png
