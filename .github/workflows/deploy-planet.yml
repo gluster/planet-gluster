@@ -1,0 +1,33 @@
+name: Publish planet via GitHub Pages
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  build:
+    name: Deploy planet
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.3'
+      - name: Run the planet build
+        run: |
+          gem install bundler
+          bundle update --bundler
+          bundle install
+          bundle exec middleman build --verbose
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          email: mscherer@localhost
+          build_dir: build
+          branch: gh-pages

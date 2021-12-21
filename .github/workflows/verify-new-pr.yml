@@ -1,0 +1,20 @@
+name: Verify PR
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: Build planet
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.3'
+      - name: Run the planet build
+        run: |
+          gem install bundler
+          bundle update --bundler
+          bundle install
+          bundle exec middleman build --verbose
