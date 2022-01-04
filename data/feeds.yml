@@ -12,20 +12,15 @@
 #    tag or category to include gluster-related postings to keep
 #    things on topic :-)
 
-Hari Gowtham's blog on quota's accounting(1/3):
-  image: ant.png
-  rounded: false
-  feed: https://medium.com/@harigowtham/glusterfs-quotas-accounting-6ee60c78bb1f
+#Hari Gowtham's blog on quota's accounting(1/3):
+#  image: ant.png
+#  rounded: false
+#  feed: https://medium.com/@harigowtham/glusterfs-quotas-accounting-6ee60c78bb1f
 
 Gluster blog posts - @sacharya:
   image: ant.png
   rounded: false
   feed: https://shwetha174.blogspot.com/feeds/posts/default/-/Gluster/?alt=rss
-
-andrewklau:
-  image: ant.png
-  rounded: false
-  feed: https://www.andrewklau.com/rss/
 
 'atinmu''s Blog':
   image: ant.png
@@ -37,15 +32,10 @@ Bharata B Rao:
   rounded: false
   feed: https://raobharata.wordpress.com/tag/gluster/feed/
 
-Chris Cowley:
-  image: ant.png
-  rounded: false
-  feed: https://chriscowley.me.uk/feeds/storage.atom.xml
-
-Celingest Blog - Feel the Cloud » GlusterFS:
-  image: ant.png
-  rounded: false
-  feed: http://blog.celingest.com/en/tag/glusterfs/feed/
+#Chris Cowley:
+#  image: ant.png
+#  rounded: false
+#  feed: https://chriscowley.me.uk/feeds/storage.atom.xml
 
 Dissociated Press » Gluster:
   image: ant.png
@@ -61,11 +51,6 @@ Free Software, Open Source And My Life Around That » GlusterFS:
   image: ant.png
   rounded: false
   feed: https://lalatendu.org/category/glusterfs/feed/
-
-Gluster Community Day Events:
-  image: ant.png
-  rounded: false
-  feed: https://www.eventbrite.com/rss/user_list_events/1386959226
 
 Gluster Community Website » glusterfs:
   image: ant.png
@@ -143,11 +128,6 @@ Karthik U S:
   rounded: false
   feed: http://uskarthik.blogspot.com/feeds/posts/default/-/gluster
 
-Linux Journal GlusterFS Feed:
-  image: ant.png
-  rounded: false
-  feed: https://www.linuxjournal.com/taxonomy/term/906/all/feed
-
 Mjanja Tech » GlusterFS:
   image: ant.png
   rounded: false
@@ -177,11 +157,6 @@ Platypus Reloaded:
   image: ant.png
   rounded: false
   feed: http://pl.atyp.us/feeds/cat-technical.rss
-
-Red Hat Storage:
-  image: ant.png
-  rounded: false
-  feed: http://redhatstorage.redhat.com/category/gluster/feed/
 
 Severalnines - high availability alfresco:
   image: ant.png
@@ -222,7 +197,7 @@ zDevOps:
 Anoop C S:
   image: anoopcs.png
   rounded: true
-  feed: https://openforums.wordpress.com/tag/glusterfs/feed/
+  feed: https://openforums.blog/category/gnulinux-sysadmin/storage/feed/
 
 'Gluster on kshlm''s blog':
   image: kshlm.png
