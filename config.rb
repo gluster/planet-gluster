@@ -110,21 +110,21 @@ require 'lib/planet.rb'
 # Development-only configuration
 ###
 #
-configure :development do
-  puts "\nUpdating git submodules..."
-  puts `git submodule init && git submodule sync`
-  puts `git submodule foreach "git pull -qf origin master"`
-  puts "\n"
-  puts '== Administration is at http://0.0.0.0:4567/admin/'
-
-  activate :livereload
-  # config.sass_options = {:debug_info => true}
-  # config.sass_options = {:line_comments => true}
-  compass_config do |config|
-    config.output_style = :expanded
-    config.sass_options = { debug_info: true, line_comments: true }
-  end
-end
+#configure :development do
+#  puts "\nUpdating git submodules..."
+#  puts `git submodule init && git submodule sync`
+#  puts `git submodule foreach "git pull -qf origin master"`
+#  puts "\n"
+#  puts '== Administration is at http://0.0.0.0:4567/admin/'
+#
+#  activate :livereload
+#  # config.sass_options = {:debug_info => true}
+#  # config.sass_options = {:line_comments => true}
+#  compass_config do |config|
+#    config.output_style = :expanded
+#    config.sass_options = { debug_info: true, line_comments: true }
+#  end
+#end
 
 # Build-specific configuration
 configure :build do
