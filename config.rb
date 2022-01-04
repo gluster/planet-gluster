@@ -4,8 +4,6 @@
 
 # Look in data/site.yml for general site configuration
 
-Time.zone = data.site.timezone || 'UTC'
-
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
