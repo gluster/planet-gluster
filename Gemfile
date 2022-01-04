@@ -7,7 +7,6 @@ gem "middleman", "~> 4"
 
 gem "middleman-livereload"
 gem 'middleman-sprockets'
-gem 'middleman-deploy'
 
 # favicon support (favicon PNG should be 144×144)
 gem "middleman-favicon-maker"
