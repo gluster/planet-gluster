@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 source 'https://rails-assets.org'
 
-gem "middleman", "~> 3.3.3"
+gem "middleman", "~> 4"
 
 gem "middleman-livereload"
 gem 'middleman-sprockets'
