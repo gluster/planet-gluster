@@ -4,8 +4,6 @@
 
 # Look in data/site.yml for general site configuration
 
-Time.zone = data.site.timezone || 'UTC'
-
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -77,11 +75,6 @@ activate :directory_indexes
 # Don't have a layout for XML
 page '*.xml', layout: false
 
-# Docs all have the docs layout
-with_layout :docs do
-  # page "/documentation/*"
-  # page "/documentation*"
-end
 
 # Don't make these URLs have pretty URLs
 page '/404.html', directory_index: false
@@ -90,8 +83,8 @@ page '/.htacces.html', directory_index: false
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
-
-proxy '/.htaccess', '/.htaccess.html', locals: {}, ignore: true
+# disabled for now, fix later
+#proxy '/.htaccess', '/.htaccess.html', locals: {}, ignore: true
 
 
 ###
@@ -117,21 +110,21 @@ require 'lib/planet.rb'
 # Development-only configuration
 ###
 #
-configure :development do
-  puts "\nUpdating git submodules..."
-  puts `git submodule init && git submodule sync`
-  puts `git submodule foreach "git pull -qf origin master"`
-  puts "\n"
-  puts '== Administration is at http://0.0.0.0:4567/admin/'
-
-  activate :livereload
-  # config.sass_options = {:debug_info => true}
-  # config.sass_options = {:line_comments => true}
-  compass_config do |config|
-    config.output_style = :expanded
-    config.sass_options = { debug_info: true, line_comments: true }
-  end
-end
+#configure :development do
+#  puts "\nUpdating git submodules..."
+#  puts `git submodule init && git submodule sync`
+#  puts `git submodule foreach "git pull -qf origin master"`
+#  puts "\n"
+#  puts '== Administration is at http://0.0.0.0:4567/admin/'
+#
+#  activate :livereload
+#  # config.sass_options = {:debug_info => true}
+#  # config.sass_options = {:line_comments => true}
+#  compass_config do |config|
+#    config.output_style = :expanded
+#    config.sass_options = { debug_info: true, line_comments: true }
+#  end
+#end
 
 # Build-specific configuration
 configure :build do
@@ -193,56 +186,4 @@ configure :build do
   end
 end
 
-###
-# Deployment
-##
 
-if data.site.openshift
-  os_token, os_host = data.site.openshift.match(/([0-9a-f]+)@([^\/]+)/).captures
-
-  deploy_config = {
-    method: :rsync,
-    user: os_token,
-    host: os_host,
-    path: "/var/lib/openshift/#{os_token}/app-root/repo/public",
-    clean: true, # remove orphaned files on remote host
-    build_before: true # default false
-  }
-
-elsif data.site.rsync
-  rsync = URI.parse(data.site.rsync)
-
-  deploy_config = {
-    method: :rsync,
-    user: rsync.user || ENV["USER"],
-    host: rsync.host,
-    path: rsync.path,
-    port: rsync.port || 22,
-    clean: true, # remove orphaned files on remote host
-    build_before: true # default false
-  }
-
-else
-  # For OpenShift,
-  #
-  # 1) use the barebones httpd cartridge from:
-  #    http://cartreflect-claytondev.rhcloud.com/reflect?github=stefanozanella/openshift-cartridge-httpd
-  #    (Add as URL at the bottom of the create from cartridge page)
-  #
-  # 2) Copy your new site's git repo URL and use it for 'production':
-  #    git remote add production OPENSHIFT_GIT_REMOTE_HERE
-  #
-  # 3) Now, you can easily deploy to your new OpenShift site!
-  #    bundle exec middleman deploy
-
-  deploy_config = {
-    method: :git,
-    remote: 'production',
-    branch: 'master',
-    build_before: true # default false
-  }
-end
-
-activate :deploy do |deploy|
-  deploy_config.each { |key, val| deploy[key] = val }
-end

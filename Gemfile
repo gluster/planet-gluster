@@ -3,11 +3,10 @@
 source 'http://rubygems.org'
 source 'https://rails-assets.org'
 
-gem "middleman", "~> 3.3.3"
+gem "middleman", "~> 4"
 
 gem "middleman-livereload"
 gem 'middleman-sprockets'
-gem 'middleman-deploy'
 
 # favicon support (favicon PNG should be 144×144)
 gem "middleman-favicon-maker"
